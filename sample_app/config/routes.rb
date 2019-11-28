@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/signup' => 'users#new'
+
   root 'static_pages#home'
 
   get  "/help" => "static_pages#help" #この書き方でも問題ない！
